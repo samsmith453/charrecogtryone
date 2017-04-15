@@ -20,6 +20,7 @@ $(document).ready(function(){
      $("#reset").click(clearCanv);
      $("#teach").click(teachMe);
      $("#test").click(function(){
+          $("#guess").text("*");
           var cont = ctx.getImageData(0, 0, c.width, c.height);
           testMe(cont);
      });
